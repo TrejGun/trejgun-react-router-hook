@@ -1,0 +1,56 @@
+{
+  "author": {
+    "email": "TrejGun+OpenSource@gmail.com",
+    "name": "TrejGun"
+  },
+  "bugs": {
+    "url": "https://github.com/TrejGun/trejgun-react-router-hooks"
+  },
+  "dependencies": {
+    "react-router": "5.0.1"
+  },
+  "description": "Set of react 16.8 hooks for react-router",
+  "devDependencies": {
+    "@types/history": "4.7.3",
+    "@types/react-router": "5.0.5",
+    "@typescript-eslint/eslint-plugin": "2.3.1",
+    "@typescript-eslint/parser": "2.3.1",
+    "eslint": "6.4.0",
+    "eslint-config-standard": "14.1.0",
+    "eslint-import-resolver-ts": "0.4.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-mocha": "6.1.1",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "typescript": "3.6.3"
+  },
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "keywords": [
+    "react",
+    "router",
+    "hooks"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./src/index.ts",
+  "name": "@trejgun/react-hooks-router",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TrejGun/trejgun-react-router-hooks"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --fix --ext .ts",
+    "prebuild": "rm -rf dist/",
+    "prepublish": "npm run build"
+  },
+  "sideEffects": false,
+  "title": "react router hooks",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "0.0.1"
+}
