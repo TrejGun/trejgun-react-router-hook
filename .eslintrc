@@ -1,95 +1,9 @@
 {
   "root": true,
-  "extends": [
-    "standard",
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:import/errors",
-    "plugin:import/typescript",
-    "plugin:import/warnings"
-  ],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
-    "ecmaVersion": 9,
-    "sourceType": "module"
+    "project": "./tsconfig.json"
   },
-  "plugins": [
-    "import",
-    "@typescript-eslint",
-    "standard"
-  ],
-  "rules": {
-    "arrow-parens": [
-      "error",
-      "as-needed"
-    ],
-    "comma-dangle": [
-      2,
-      "always-multiline"
-    ],
-    "import/newline-after-import": [
-      "error",
-      {
-        "count": 2
-      }
-    ],
-    "indent": [
-      "error",
-      2
-    ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
-    "max-len": [
-      "error",
-      {
-        "code": 120
-      }
-    ],
-    "multiline-ternary": [
-      "error",
-      "always-multiline"
-    ],
-    "no-console": [
-      "error"
-    ],
-    "no-multiple-empty-lines": [
-      "error",
-      {
-        "max": 2,
-        "maxEOF": 1
-      }
-    ],
-    "no-unused-vars": [
-      "error"
-    ],
-    "no-void": "off",
-    "object-curly-spacing": [
-      "error",
-      "never"
-    ],
-    "operator-linebreak": [
-      "error",
-      "before"
-    ],
-    "quotes": [
-      "error",
-      "double"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ]
-  },
-  "settings": {
-    "import/resolver": {
-      "ts": {
-        "alwaysTryTypes": true
-      }
-    }
-  }
+  "extends": [
+    "@trejgun/eslint-config/presets/ts"
+  ]
 }
